@@ -1,31 +1,31 @@
-let fs = require('fs');
-let path = require('path');
+/* eslint-disable consistent-return */
+const fs = require('fs');
+const path = require('path');
+const express = require('express');
 
-let express = require('express');
-let router = express.Router();
+const router = express.Router();
 
-/* GET home page. */
-router.get('/', function(req, res, next) {
-  if(!req.query.path)
-    req.query.path = 'default.json';
-
-  parseJSON(req.query.path, function(err, results) {
-    if(err) return next(err);
-    res.render('document', results);
-  });
-});
-
-parseJSON = function (filename, callback) {
-  fs.readFile(path.join(__dirname, '..', 'resume-data', filename), function(err, file) {
+function parseJSON(filename, callback) {
+  fs.readFile(path.join(__dirname, '..', 'resume-data', filename), (err, file) => {
     if (err) return callback(err);
     let out;
     try {
       out = JSON.parse(file);
-    } catch(err) {
-      return callback(err)
+    } catch (err2) {
+      return callback(err2);
     }
     return callback(null, out);
   });
 }
+
+/* GET home page. */
+router.get('/', (req, res, next) => {
+  if (!req.query.path) req.query.path = 'default.json';
+
+  parseJSON(req.query.path, (err, results) => {
+    if (err) return next(err);
+    res.render('document', results);
+  });
+});
 
 module.exports = router;
