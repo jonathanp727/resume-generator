@@ -1,3 +1,152 @@
 {
-  "name": "Name"
+  "basics": {
+    "name": "Abraham Lincoln",
+    "phone": "xxx-xxx-xxxx",
+    "email": "AbrahamLincoln.illinois.edu",
+    "github": "/abraham",
+    "linkedin": "/in/abraham",
+    "objective": "4 Score and 7 years... ",
+    "address": {
+      "line1": "1234 Main Street",
+      "line2": "456-78",
+      "line3": "Maintown, AA 60000"
+    }
+  },
+  "education": {
+    "institution": "University of Illinois at Urbana-Champaign",
+    "degree": "Computer Science",
+    "gpa": "5.0",
+    "courses": [
+      {
+        "name": "Intro to Economics",
+        "id": "econ101"
+      },
+      {
+        "name": "Intro to Japanese",
+        "id": "japn101"
+      },
+      {
+        "name": "Intro to Physics",
+        "id": "phys101"
+      },
+    ],
+    "startDate": "Aug 2015",
+    "endDate": "Present"
+  },
+  "experience": [
+    {
+      "company": "Job 1",
+      "website": "http://example.com",
+      "position": "Head Programmer",
+      "startDate": "Sept 2013",
+      "endDate": "May 2015",
+      "summary": [
+        "Took orders from boss",
+        "Programmed stuff",
+        "Went to Mcdonalds for lunch every Tuesday"
+      ]
+    },
+    {
+      "company": "Jewel-Osco",
+      "website": "http:/;example.com",
+      "position": "Cart Monkey",
+      "startDate": "Jun 2013",
+      "endDate": "Aug 2015",
+      "summary": [
+        "Don't work at Jewel-Osco"
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "name": "Project 1",
+      "startDate": "Jul 2000",
+      "endDate": "Jul 2020",
+      "summary": [
+        "Project 1 is a good project",
+        "Worked on the backend",
+        "Built using Node.js, MongoDB, Express, Chai, and ReactJS"
+      ]
+    },
+    {
+      "name": "Project 2",
+      "startDate": "Hackathon 2010",
+      "endDate": "",
+      "summary": [
+        "Project 2 does x, y, and z",
+        "Built using basic construction tools",
+        "3rd place winner"
+      ]
+    }
+  ],
+  "skills": {
+    "languages": [
+      {
+        "name": "C++",
+        "weight": 7.8
+      },
+      {
+        "name": "CSS",
+        "weight": 5.5
+      },
+      {
+        "name": "HTML",
+        "weight": 6.9
+      },
+      {
+        "name": "Java",
+        "weight": 6.3
+      },
+      {
+        "name": "Javascript",
+        "weight": 8.2
+      },
+      {
+        "name": "Ruby",
+        "weight": 3.3
+      }
+    ],
+    "technologies": [
+      {
+        "name": "Node.js",
+        "weight": 6.9
+      },
+      {
+        "name": "MongoDB",
+        "weight": 4.3
+      },
+      {
+        "name": "MySQL",
+        "weight": 5.2
+      },         
+      {
+        "name": "Rails",
+        "weight": 4.8
+      },
+      {
+        "name": "React",
+        "weight": 3.2
+      }
+    ],
+    "devops": [
+      {
+        "name": "Git/SVN",
+        "weight": 4.5
+      },
+      {
+        "name": "AWS",
+        "weight": 8
+      }
+    ],
+    "naturalLanguages": [
+      {
+        "name": "Japanese",
+        "weight": 9.9
+      },
+      {
+        "name": "Chinese",
+        "weight": 0.5
+      }
+    ]
+  }
 }
